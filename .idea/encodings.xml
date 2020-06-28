@@ -11,5 +11,7 @@
     <file url="file://$PROJECT_DIR$/demo-mq-provide/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-pojo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-pojo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-thread/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-thread/src/main/resources" charset="UTF-8" />
   </component>
 </project>

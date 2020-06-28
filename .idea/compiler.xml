@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="demo-mq-provide" />
+        <module name="demo-pojo" />
+        <module name="demo-thread" />
+        <module name="demo-mq-consumer" />
         <module name="demo-common" />
         <module name="demo-app" />
-        <module name="demo-mq-consumer" />
-        <module name="demo-pojo" />
-        <module name="demo-mq-provide" />
       </profile>
     </annotationProcessing>
   </component>
