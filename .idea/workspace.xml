@@ -196,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593326835728</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="多线程demo">
+      <created>1593326948645</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593326948645</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -204,10 +211,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="多线程demo" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="562" y="119" key="CommitChangelistDialog2" timestamp="1593326834654">
+    <state x="562" y="119" key="CommitChangelistDialog2" timestamp="1593326948068">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="562" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593326834654" />
+    <state x="562" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593326948068" />
     <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1592963610725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -248,10 +255,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592963613589" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1593326843612">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1593326955099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593326843612" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593326955099" />
     <state x="334" y="224" key="new project wizard" timestamp="1593324683877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
