@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 /**
+ * 生产者发送消息回调的确认机制
  * 需要回调的时候才会这样定义一个Configuration类来生成RabbitTemplate，
  * 如果不使用回调，框架会自动生成一个默认的RabbitTemplate实例
  *
