@@ -70,4 +70,40 @@ public class SendMessageController {
         rabbitTemplate.convertAndSend("fanoutExchange", null, map);
         return "ok";
     }
+
+    /**
+     * 消息推送到server，但是在server里找不到交换机
+     * 写个测试接口，把消息推送到名为‘non-existent-exchange’的交换机上（这个交换机是没有创建没有配置的）
+     * @return
+     */
+    @GetMapping("/TestMessageAck")
+    public String TestMessageAck() {
+        String messageId = String.valueOf(UUID.randomUUID());
+        String messageData = "message: non-existent-exchange test message ";
+        String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        Map<String, Object> map = new HashMap<>();
+        map.put("messageId", messageId);
+        map.put("messageData", messageData);
+        map.put("createTime", createTime);
+        rabbitTemplate.convertAndSend("non-existent-exchange", "TestDirectRouting", map);
+        return "ok";
+    }
+
+    /**
+     * 消息推送到server，找到交换机了，但是没找到队列
+     * 这种情况就是需要新增一个交换机，但是不给这个交换机绑定队列，我来简单地在DirectRabitConfig里面新增一个直连交换机，名叫‘lonelyDirectExchange’，但没给它做任何绑定配置操作
+     * @return
+     */
+    @GetMapping("/TestMessageAck2")
+    public String TestMessageAck2() {
+        String messageId = String.valueOf(UUID.randomUUID());
+        String messageData = "message: lonelyDirectExchange test message ";
+        String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        Map<String, Object> map = new HashMap<>();
+        map.put("messageId", messageId);
+        map.put("messageData", messageData);
+        map.put("createTime", createTime);
+        rabbitTemplate.convertAndSend("lonelyDirectExchange", "TestDirectRouting", map);
+        return "ok";
+    }
 }
