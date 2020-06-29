@@ -8,5 +8,5 @@ public interface Service {
     boolean isShutdown();
 
     //提交任务到线程池
-    void execute(Runnable runnable);
+    void execute(Runnable runnable) throws Exception;
 }

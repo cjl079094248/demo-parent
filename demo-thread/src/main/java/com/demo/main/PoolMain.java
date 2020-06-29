@@ -1,7 +1,9 @@
 package com.demo.main;
 
 import com.demo.pool.ThreadPool;
+import com.sun.xml.internal.ws.util.StringUtils;
 
+import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -27,14 +29,18 @@ public class PoolMain {
 
         //定义20个任务并且提交到线程池
         for (int i = 0; i < 20; i++) {
-            threadPool.execute(() ->{
-                try {
-                    TimeUnit.SECONDS.sleep(10);
-                    System.out.println(Thread.currentThread().getName() + " is running add done");
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+            Runnable runnable = new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        TimeUnit.SECONDS.sleep(10);
+                        System.out.println(Thread.currentThread().getName() + " is running add done");
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
-            });
+            };
+            threadPool.execute(runnable);
         }
 
         while (true){
