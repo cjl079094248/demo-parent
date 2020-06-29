@@ -11,6 +11,14 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 需要回调的时候才会这样定义一个Configuration类来生成RabbitTemplate，
  * 如果不使用回调，框架会自动生成一个默认的RabbitTemplate实例
+ *
+ *
+ * 先从总体的情况分析，推送消息存在四种情况：
+ *
+ * ①消息推送到server，但是在server里找不到交换机
+ * ②消息推送到server，找到交换机了，但是没找到队列
+ * ③消息推送到sever，交换机和队列啥都没找到
+ * ④消息推送成功
  */
 @Configuration
 public class RabbitConfig {
