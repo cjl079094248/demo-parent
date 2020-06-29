@@ -7,7 +7,6 @@ import com.demo.queue.BlockingQueue;
  */
 public class PoolThread extends Thread {
 
-
     private BlockingQueue taskQueue = null;
 
     private boolean isStopped = false;
