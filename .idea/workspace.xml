@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a21d47d1-006a-4f61-aac8-9f44b1b573c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-mq-provide/src/main/java/com/demo/controller/SendMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-mq-provide/src/main/java/com/demo/controller/SendMessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-mq-provide/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-mq-provide/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-app/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/demo-app/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-mq-consumer/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/demo-mq-consumer/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-mq-provide/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/demo-mq-provide/src/main/resources/banner.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo-mq-provide/src/main/resources" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
@@ -54,13 +55,14 @@
       <recent name="com.demo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\learn\demo-parent\demo-mq-provide\src\main\resources" />
+      <recent name="D:\learn\demo-parent\demo-app\src\main\resources" />
+      <recent name="D:\learn\demo-parent\demo-mq-consumer\src\main\resources" />
       <recent name="D:\learn\demo-parent" />
       <recent name="D:\idea_workspace\demo-parent\demo-mq-consumer\src\main\resources" />
-      <recent name="D:\idea_workspace\demo-parent\demo-mq-provide\src\main\resources" />
-      <recent name="D:\idea_workspace\demo-parent\demo-app\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DemoMqConsumerApplication">
+  <component name="RunManager" selected="Application.DemoMqProvideApplication">
     <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.demo.DemoApplication" />
       <module name="demo-app" />
@@ -162,10 +164,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DemoMqConsumerApplication" />
-        <item itemvalue="Application.PoolMain" />
         <item itemvalue="Application.DemoMqProvideApplication" />
+        <item itemvalue="Application.DemoMqConsumerApplication" />
         <item itemvalue="Application.DemoApplication" />
+        <item itemvalue="Application.PoolMain" />
       </list>
     </recent_temporary>
   </component>
@@ -248,66 +250,103 @@
       <option name="project" value="LOCAL" />
       <updated>1593415419571</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="多线程demo">
+      <created>1593417616813</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1593417616813</updated>
+    </task>
+    <task id="LOCAL-00010" summary="多线程demo">
+      <created>1593417700448</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1593417700448</updated>
+    </task>
+    <task id="LOCAL-00011" summary="多线程demo">
+      <created>1593418219754</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1593418219754</updated>
+    </task>
+    <task id="LOCAL-00012" summary="RabbitMQ">
+      <created>1593420446666</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1593420446666</updated>
+    </task>
+    <task id="LOCAL-00013" summary="增加banner">
+      <created>1593507514570</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1593507514570</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="多线程demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="多线程demo" />
+    <MESSAGE value="RabbitMQ" />
+    <MESSAGE value="增加banner" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加banner" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1593413747816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593413747816" />
-    <state x="562" y="119" key="CommitChangelistDialog2" timestamp="1593415418882">
+    <state x="562" y="119" key="CommitChangelistDialog2" timestamp="1593507513722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="562" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593415418882" />
+    <state x="562" y="119" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593507513722" />
     <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1592963610725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592963610725" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1593416150982">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1593507725271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593416150982" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1593416150982">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593507725271" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1593507725271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593416150982" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1593416150982">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593507725271" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1593507725271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593416150982" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1593416150982">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593507725271" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1593507725271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593416150982" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1593416150736">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593507725271" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1593507725156">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593416150736" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1593416150736">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593507725156" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1593507725156">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593416150736" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1593416150736">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593507725156" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1593507725156">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593416150736" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1593416150736">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593507725156" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1593507725156">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593416150736" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593507725156" />
     <state x="463" y="165" key="SettingsEditor" timestamp="1592963613589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592963613589" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1593415428461">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1593507539853">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593415428461" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593507539853" />
     <state x="334" y="224" key="new project wizard" timestamp="1593417074069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
