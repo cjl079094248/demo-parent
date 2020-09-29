@@ -7,6 +7,27 @@ import org.springframework.amqp.core.TopicExchange;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * 主题交换机，这个交换机其实跟直连交换机流程差不多，但是它的特点就是在它的路由键和绑定键之间是有规则的。
+ * 简单地介绍下规则：
+ *
+ * *  (星号) 用来表示一个单词 (必须出现的)
+ * #  (井号) 用来表示任意数量（零个或多个）单词
+ * 通配的绑定键是跟队列进行绑定的，举个小例子
+ * 队列Q1 绑定键为 *.TT.*          队列Q2绑定键为  TT.#
+ * 如果一条消息携带的路由键为 A.TT.B，那么队列Q1将会收到；
+ * 如果一条消息携带的路由键为TT.AA.BB，那么队列Q2将会收到；
+ *
+ * 主题交换机是非常强大的，为啥这么膨胀？
+ * 当一个队列的绑定键为 "#"（井号） 的时候，这个队列将会无视消息的路由键，接收所有的消息。
+ * 当 * (星号) 和 # (井号) 这两个特殊字符都未在绑定键中出现的时候，此时主题交换机就拥有的直连交换机的行为。
+ * 所以主题交换机也就实现了扇形交换机的功能，和直连交换机的功能。
+ *
+ * 另外还有 Header Exchange 头交换机 ，Default Exchange 默认交换机，Dead Letter Exchange 死信交换机，这几个该篇暂不做讲述。
+ * ————————————————
+ * 版权声明：本文为CSDN博主「小目标青年」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+ * 原文链接：https://blog.csdn.net/qq_35387940/java/article/details/100514134
+ */
 @Configuration
 public class TopicRabbitConfig {
     //绑定键
