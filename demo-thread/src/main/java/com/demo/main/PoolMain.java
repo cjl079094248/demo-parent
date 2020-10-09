@@ -1,9 +1,7 @@
 package com.demo.main;
 
 import com.demo.pool.ThreadPool;
-import com.sun.xml.internal.ws.util.StringUtils;
 
-import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 /**
