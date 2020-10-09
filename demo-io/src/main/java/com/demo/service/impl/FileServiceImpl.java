@@ -2,6 +2,7 @@ package com.demo.service.impl;
 
 import com.demo.service.FileService;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
@@ -13,6 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+@Service
 public class FileServiceImpl implements FileService {
     @Value("${transcode.path}")
     private String transcodePath;
