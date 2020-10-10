@@ -25,6 +25,7 @@ public class FileController {
     @RequestMapping(value = "/outputFile", method = {RequestMethod.POST,RequestMethod.GET})
     public void outputFile(@RequestParam String fileName, HttpServletResponse response){
         if(StringUtils.isEmpty(fileName)){
+            System.out.println("==================fileName参数不能为空==================");
             fileService.setVerifySignResponse(response,"fileName参数不能为空",500);
             return;
         }

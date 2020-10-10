@@ -25,6 +25,7 @@ public class FileServiceImpl implements FileService {
 
     @Override
     public void outputFile(String fileName, HttpServletResponse response) {
+        System.out.println("==================进入文件下载服务==================");
         File file = new File(transcodePath + fileName);
         FileInputStream in = null;
         OutputStream out = null;
@@ -50,6 +51,7 @@ public class FileServiceImpl implements FileService {
                     out.flush();
                 }
             }else{
+                System.out.println("==================" + fileName + "不存在==================");
                 setVerifySignResponse(response,fileName + "不存在",500);
             }
         } catch (Exception e) {
