@@ -16,6 +16,7 @@
         <module>demo-mq-consumer</module>
         <module>demo-thread</module>
         <module>demo-io</module>
+        <module>demo-video</module>
     </modules>
 
     <properties>
