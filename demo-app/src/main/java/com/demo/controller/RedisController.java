@@ -1,5 +1,6 @@
 package com.demo.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.Map;
 
+@Slf4j
 @RestController
 @RequestMapping("/redis")
 public class RedisController {
@@ -34,6 +36,7 @@ public class RedisController {
         obj.put("msg","success");
         obj.put("code",0);
         obj.put("data",data);
+        log.info(data);
         return obj;
     }
 }
