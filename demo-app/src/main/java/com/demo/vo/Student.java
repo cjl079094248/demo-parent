@@ -1,5 +1,6 @@
 package com.demo.vo;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection="student")
@@ -28,6 +29,7 @@ public class Student {
         this.age = age;
     }
 
+    @Id
     private String no;
     private String name;
     private int age;
