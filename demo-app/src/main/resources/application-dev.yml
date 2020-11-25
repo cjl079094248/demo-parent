@@ -6,8 +6,8 @@ spring:
       host: 127.0.0.1
       port: 27017
       database: demo
-      password: root
-      username: root
+      password: #root
+      username: #root
   redis:
     database: 0
     host: localhost
