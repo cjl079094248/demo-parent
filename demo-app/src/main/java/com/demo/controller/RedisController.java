@@ -36,6 +36,13 @@ public class RedisController {
         obj.put("msg","success");
         obj.put("code",0);
         obj.put("data",data);
+
+        System.out.println("log.isTraceEnabled():" + log.isTraceEnabled());
+        System.out.println("log.isDebugEnabled():" + log.isDebugEnabled());
+        System.out.println("log.isInfoEnabled():" + log.isInfoEnabled());
+        System.out.println("log.isWarnEnabled():" + log.isWarnEnabled());
+        System.out.println("log.isErrorEnabled():" + log.isErrorEnabled());
+
         log.info(data);
         return obj;
     }

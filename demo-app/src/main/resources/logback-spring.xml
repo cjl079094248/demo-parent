@@ -174,7 +174,7 @@
         <logger name="com.nmys.view" level="debug"/>
     </springProfile>
 
-    <root level="info">
+    <root level="info"><!-- 这里的level就是指定系统采用什么样的日志级别，log.isDebugEnabled()等都是根据该值来确定值的 -->
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="DEBUG_FILE" />
         <appender-ref ref="INFO_FILE" />
