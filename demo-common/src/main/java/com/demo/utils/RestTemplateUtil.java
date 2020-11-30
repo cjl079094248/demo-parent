@@ -24,8 +24,11 @@ public class RestTemplateUtil {
     public static HttpComponentsClientHttpRequestFactory httpRequestFactory = new HttpComponentsClientHttpRequestFactory();
 
     static {
+        //httpclient使用连接池来管理连接，这个时间就是从连接池获取连接的超时时间，可以想象下数据库连接池
         httpRequestFactory.setConnectionRequestTimeout(150000);
+        //连接建立时间，三次握手完成时间
         httpRequestFactory.setConnectTimeout(150000);
+        //数据传输过程中数据包之间间隔的最大时间
         httpRequestFactory.setReadTimeout(150000);
     }
 
