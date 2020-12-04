@@ -1,0 +1,17 @@
+server:
+  port: 10003
+spring:
+  servlet:
+    multipart:
+      # 单个文件最大大小
+      max-file-size: 100MB
+      # 所有上传文件最大大小
+      max-request-size: 100MB
+  application:
+    name: m2o-retrieve
+  profiles:
+    active: dev
+  httpclient:
+    enabled: true
+    max-connections: 200
+    max-connections-per-route: 50

@@ -1,0 +1,21 @@
+#本地环境
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        metadata:
+          version: v1
+          target-version: v1
+    sentinel:
+      transport:
+        # 指定sentinel 控制台的地址
+        dashboard: 127.0.0.1:8080
+
+es:
+  node1-url: 127.0.0.1
+  node2-url: 127.0.0.1
+  node3-url: 127.0.0.1
+  node1-port: 9200
+  node2-port: 9200
+  node3-port: 9200
