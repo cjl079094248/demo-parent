@@ -18,6 +18,7 @@
         <module>demo-io</module>
         <module>demo-video</module>
         <module>demo-retrieve</module>
+        <module>demo-sentinel</module>
     </modules>
 
     <properties>

@@ -1,0 +1,19 @@
+#本地环境
+spring:
+  cloud:
+    sentinel:
+      eager: true
+      datasource:
+        flow:
+          file:
+            rule-type: flow
+            data-type: json
+            file: classpath:flowrule.json
+        degrade:
+          file:
+            rule-type: degrade
+            data-type: json
+            file: classpath:degraderule.json
+      transport:
+        # 指定sentinel 控制台的地址
+        dashboard: 127.0.0.1:8080

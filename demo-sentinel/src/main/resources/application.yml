@@ -1,5 +1,5 @@
 server:
-  port: 10005
+  port: 10006
 spring:
   servlet:
     multipart:
@@ -8,7 +8,7 @@ spring:
       # 所有上传文件最大大小
       max-request-size: 100MB
   application:
-    name: demo-retrieve
+    name: demo-sentinel
   profiles:
     active: dev
   httpclient:
