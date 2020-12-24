@@ -1,5 +1,5 @@
 server:
-  port: 10001
+  port: 10004
 
 spring:
   #配置rabbitMq 服务器
