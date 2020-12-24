@@ -1,0 +1,8 @@
+[
+  {
+    "resource": "sayHello",
+    "grade": 0,
+    "count": 20.0,
+    "timeWindow": 60
+  }
+]
